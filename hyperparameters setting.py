@@ -1,13 +1,13 @@
 # Inner loop parameters
-    'inner_lr': 0.01,      # 0.001
-    'max_path_length': 100,
+    'inner_lr': 0.01,     
+    'max_path_length': 150,
     'adapt_steps': 3,
     'adapt_batch_size': 10,  
     'ppo_epochs': 3,
     'ppo_clip_ratio': 0.2,
     # Outer loop parameters
     'meta_batch_size': 20,  # 'ways'
-    'outer_lr': 0.1,        # 0.3
+    'outer_lr': 0.1,        
     'backtrack_factor': 0.5,
     'ls_max_steps': 15,
     'max_kl': 0.01,
@@ -17,8 +17,8 @@
     'gamma': 0.99,
     'fc_neurons': 100,
     # Other parameters
-    'algo_name': 'MC_MAML-evo',
-    'device': 'cpu',   # todo
+    'algo_name': 'ER-MAML',
+    'device': 'cpu',  
     'num_iterations': 1000,
     'save_every': 100,
     'seed': 48,
